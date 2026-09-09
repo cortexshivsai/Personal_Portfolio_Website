@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       SEO — CUSTOMIZE THIS
+       ============================================ -->
+  <title>Shivsai Jagadale — AI/ML Engineer</title>
+  <meta name="description" content="Shivsai Jagadale is a Computer Science & AI/ML student building computer vision, NLP and machine learning projects. Explore his work in face recognition, voice assistants and predictive analytics.">
+  <meta name="author" content="Shivsai Jagadale">
+  <link rel="canonical" href="https://YOUR-DOMAIN-HERE.com/"> <!-- CUSTOMIZE THIS: your live URL -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shivsai Jagadale — AI/ML Engineer">
+  <meta property="og:description" content="Portfolio of Shivsai Jagadale — machine learning, computer vision and full-stack projects.">
+  <meta property="og:image" content="assets/images/og-cover.jpg"> <!-- CUSTOMIZE THIS: 1200x630 preview image -->
+  <meta property="og:url" content="https://YOUR-DOMAIN-HERE.com/">
+
+  <!-- Favicon — CUSTOMIZE THIS -->
+  <link rel="icon" type="image/png" href="assets/icons/favicon1.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- EmailJS — powers the contact form (see js/script.js: EMAILJS_CONFIG) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="#home" class="nav__logo" aria-label="Home">SHIV'S<br>PORTFOLIO<span class="nav__logo-dot">.</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link" data-nav>Home</a></li>
+        <li><a href="#about" class="nav__link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav__link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav__link" data-nav>Projects</a></li>
+        <li><a href="#education" class="nav__link" data-nav>Education</a></li>
+        <li><a href="#focus" class="nav__link" data-nav>Focus</a></li>
+        <li><a href="#contact" class="nav__link" data-nav>Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__kicker">Computer Science &amp; AI/ML, DYP-ATU ,Talsande · Kolhapur</p>
+          <h1 class="hero__name" id="heroName">Shivsai Jagadale</h1>
+          <p class="hero__title" id="heroTitle">AI/ML Engineer Intern (Seeking)</p>
+          <p class="hero__desc" id="heroDesc">
+            I build machine learning systems and the software around them — from
+            face-recognition attendance tools to voice assistants and churn-prediction
+            dashboards. Currently a final-year CS (AI/ML) student looking for my
+            first AI/ML Engineer internship.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="assets/resume/Shivsai_Jagadale_Resume.pdf" class="btn btn--ghost" download>
+              Download Resume
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15 7.5 10.5M4 20h16"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero__socials" aria-label="Social links">
+            <li><a href="https://github.com/cortexshivsai" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.7 5.6-5.4 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+            </a></li>
+            <li><a href="https://linkedin.com/in/shivsaijagadale" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.1c.5-.9 1.9-1.9 3.9-1.9 4.2 0 5 2.8 5 6.3V21h-4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V9Z"/></svg>
+            </a></li>
+            <li><a href="mailto:shivsai1396@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+            </a></li>
+            <li><a href="https://instagram.com/shivsai0045" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+            </a></li>
+            <li><a href="https://x.com/shivsai1396" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2h3.1l-7.2 8.3L23 22h-6.6l-5.2-6.8L5.2 22H2l7.7-8.8L1 2h6.8l4.7 6.2L18.9 2Zm-1.1 18h1.7L7.4 4H5.6L17.8 20Z"/></svg>
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="hero__panel">
+          <div class="hero__photo-frame">
+            <img class="hero__photo" src="assets/images/profile.jpg" alt="Portrait of Shivsai Jagadale" width="900" height="1125">
+            <span class="hero__photo-badge hero__photo-badge--status" aria-hidden="true">
+              <span class="dot"></span> Open to work
+            </span>
+            <span class="hero__photo-badge hero__photo-badge--stat" aria-hidden="true">
+              <span class="hero__photo-stat-num" data-count="150">0</span>
+              <span class="hero__photo-stat-label">NeetCode 150</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT
+         ============================================ -->
+    <section class="section" id="about">
+      <div class="section__inner about">
+        <div class="section__head">
+          <p class="section__eyebrow">01 · About</p>
+          <h2 class="section__title">About</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text" id="aboutText">
+            <p>
+              I'm a final-year Computer Science student specializing in Artificial
+              Intelligence and Machine Learning at D Y Patil Agriculture &amp; Technical
+              University, Talsande, Kolhapur. My focus is on turning machine learning
+              ideas — classification, computer vision, NLP — into software people can
+              actually use.
+            </p>
+            <p>
+              I've built an attendance system powered by real-time face recognition, a
+              voice-controlled assistant driven by the Gemini API, and a churn-prediction
+              pipeline that turns raw customer data into decisions a business can act on.
+              I'm comfortable across the stack: Python and ML tooling on one side, React
+              and Node on the other.
+            </p>
+            <p>
+              I'm currently looking for an AI/ML Engineer Internship where I can apply
+              what I've learned — model development, data preprocessing, and full-stack
+              delivery — to real-world problems.
+            </p>
+          </div>
+
+          <div class="about__side">
+            <div class="about__avatar" data-reveal>
+              <span class="about__avatar-ring" aria-hidden="true"></span>
+              <img class="about__avatar-photo" src="assets/images/profile-square.jpg" alt="Shivsai Jagadale">
+              <span class="about__avatar-status"><span class="dot"></span> Open to work</span>
+            </div>
+
+            <ul class="about__highlights" id="aboutHighlights">
+              <li>
+                <span class="about__highlight-num">4</span>
+                <span class="about__highlight-label">End-to-end AI/ML projects</span>
+              </li>
+              <li>
+                <span class="about__highlight-num">10+</span>
+                <span class="about__highlight-label">Languages &amp; frameworks used</span>
+              </li>
+              <li>
+                <span class="about__highlight-num">150</span>
+                <span class="about__highlight-label">NeetCode 150 completed</span>
+              </li>
+              <li>
+                <span class="about__highlight-num">6</span>
+                <span class="about__highlight-label">Certifications completed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS  (populated by JS from portfolioData.skills)
+         ============================================ -->
+    <section class="section section--alt" id="skills">
+      <div class="section__inner">
+        <div class="section__head">
+          <p class="section__eyebrow">02 · Skills</p>
+          <h2 class="section__title">Skills</h2>
+          <p class="section__sub">Tools and concepts I reach for most often.</p>
+        </div>
+        <div class="skills__grid" id="skillsGrid"><!-- JS injects .skills__category cards --></div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PROJECTS  (populated by JS from portfolioData.projects)
+         ============================================ -->
+    <section class="section section--alt" id="projects">
+      <div class="section__inner">
+        <div class="section__head">
+          <p class="section__eyebrow">03 · Projects</p>
+          <h2 class="section__title">Projects</h2>
+          <p class="section__sub">A selection of things I've built and shipped.</p>
+        </div>
+
+        <div class="filters" id="projectFilters" role="tablist" aria-label="Filter projects">
+          <button class="filter__btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter__btn" data-filter="ai-ml" role="tab" aria-selected="false">AI / ML</button>
+          <button class="filter__btn" data-filter="python" role="tab" aria-selected="false">Python</button>
+          <button class="filter__btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid"><!-- JS injects .project-card --></div>
+      </div>
+    </section>
+
+    <!-- Project modal -->
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal__close" id="modalClose" aria-label="Close project details">&times;</button>
+        <div class="modal__media">
+          <div class="modal__media-fallback" id="modalMediaFallback" aria-hidden="true"></div>
+        </div>
+        <div class="modal__body">
+          <p class="modal__category" id="modalCategory"></p>
+          <h3 class="modal__title" id="modalTitle"></h3>
+          <p class="modal__desc" id="modalDesc"></p>
+          <ul class="modal__features" id="modalFeatures"></ul>
+          <ul class="modal__tech" id="modalTech"></ul>
+          <div class="modal__links" id="modalLinks"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         EDUCATION  (populated by JS from portfolioData.education)
+         ============================================ -->
+    <section class="section" id="education">
+      <div class="section__inner">
+        <div class="section__head">
+          <p class="section__eyebrow">04 · Education</p>
+          <h2 class="section__title">Education</h2>
+        </div>
+        <div class="edu__list" id="educationList"><!-- JS injects .edu__card --></div>
+
+        <div class="section__head section__head--sub">
+          <h3 class="section__subtitle">Certifications</h3>
+        </div>
+        <ul class="cert__grid" id="certGrid"><!-- JS injects .cert__item --></ul>
+
+        <div class="section__head section__head--sub">
+          <h3 class="section__subtitle">Achievements</h3>
+        </div>
+        <ul class="achieve__list" id="achieveList"><!-- JS injects li --></ul>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FOCUS AREAS (services)  (populated by JS from portfolioData.services)
+         ============================================ -->
+    <section class="section section--alt" id="focus">
+      <div class="section__inner">
+        <div class="section__head">
+          <p class="section__eyebrow">05 · Focus</p>
+          <h2 class="section__title">Focus Areas</h2>
+          <p class="section__sub">Where I'm strongest and where I want to grow.</p>
+        </div>
+        <div class="focus__grid" id="focusGrid"><!-- JS injects .focus__card --></div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT
+         ============================================ -->
+    <section class="section" id="contact">
+      <div class="section__inner contact">
+        <div class="section__head">
+          <p class="section__eyebrow">06 · Contact</p>
+          <h2 class="section__title">Contact</h2>
+          <p class="section__sub">Have a role, project or question in mind? Reach out.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info" id="contactInfo">
+            <a class="contact__row" href="mailto:shivsai1396@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+              shivsai1396@gmail.com
+            </a>
+            <a class="contact__row" href="tel:+919359231309">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.2 4.2 2 2 0 0 1 4.2 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 3a2 2 0 0 1-.5 2L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2-.5c1 .3 2 .5 3 .6a2 2 0 0 1 1.7 2Z"/></svg>
+              +91 93592 31309
+            </a>
+            <p class="contact__row contact__row--static">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 10.5c0 6.5-9 12-9 12s-9-5.5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10.5" r="3"/></svg>
+              Kolhapur, Maharashtra, India
+            </p>
+            <div class="contact__social">
+              <a href="https://github.com/cortexshivsai" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href="https://linkedin.com/in/shivsaijagadale" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+              <a href="https://instagram.com/shivsai0045" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+              <a href="https://x.com/shivsai1396" target="_blank" rel="noopener noreferrer">X ↗</a>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <!--
+              This form sends messages via EmailJS (no backend required).
+              Configure your Service ID, Template ID and Public Key in
+              js/script.js under EMAILJS_CONFIG — see the comment there for
+              step-by-step setup instructions. Until configured, submitting
+              will show a friendly "not configured yet" message instead of
+              silently failing.
+            -->
+            <div class="field">
+              <label for="fieldName">Name</label>
+              <input type="text" id="fieldName" name="name" autocomplete="name" required>
+              <span class="field__error" id="errName" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="fieldEmail">Email</label>
+              <input type="email" id="fieldEmail" name="email" autocomplete="email" required>
+              <span class="field__error" id="errEmail" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="fieldSubject">Subject</label>
+              <input type="text" id="fieldSubject" name="subject" required>
+              <span class="field__error" id="errSubject" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="fieldMessage">Message</label>
+              <textarea id="fieldMessage" name="message" rows="5" required></textarea>
+              <span class="field__error" id="errMessage" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--wide">Send Message</button>
+            <p class="field__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <a href="#home" class="nav__logo">Shivsai Jagadale<span class="nav__logo-dot">.</span></a>
+        <p>Building AI/ML systems, one model at a time.</p>
+      </div>
+
+      <ul class="site-footer__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <ul class="site-footer__social">
+        <li><a href="https://github.com/cortexshivsai" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/shivsaijagadale" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://instagram.com/shivsai0045" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://x.com/shivsai1396" target="_blank" rel="noopener noreferrer">X</a></li>
+        <li><a href="mailto:shivsai1396@gmail.com">Email</a></li>
+      </ul>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; <span id="year"></span> Shivsai Jagadale. All rights reserved.</p>
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
