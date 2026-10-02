@@ -673,6 +673,11 @@ input, textarea { font: inherit; color: inherit; }
   padding-left: 22px; position: relative; color: var(--text-secondary);
 }
 .achieve__list li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); }
+.cert__cta {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
 
 /* ==========================================================================
    FOCUS AREAS
