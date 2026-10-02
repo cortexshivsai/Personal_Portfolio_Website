@@ -667,17 +667,17 @@ input, textarea { font: inherit; color: inherit; }
 .cert__item svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--accent); margin-top: 2px; }
 .cert__item strong { display: block; font-weight: 600; }
 .cert__item span { color: var(--text-secondary); font-size: 0.82rem; }
+.cert__cta {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
 
 .achieve__list { display: flex; flex-direction: column; gap: 12px; max-width: 700px; }
 .achieve__list li {
   padding-left: 22px; position: relative; color: var(--text-secondary);
 }
 .achieve__list li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); }
-.cert__cta {
-  margin-top: 24px;
-  display: flex;
-  justify-content: center;
-}
 
 /* ==========================================================================
    FOCUS AREAS
